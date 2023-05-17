@@ -1,0 +1,531 @@
+Prefix(:=<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46/>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46>
+Import(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46>)
+
+Declaration(Class(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Athletes>))
+Declaration(Class(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Coach>))
+Declaration(Class(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Competitions>))
+Declaration(Class(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Sports>))
+Declaration(Class(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Teams>))
+Declaration(Class(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Venues>))
+Declaration(ObjectProperty(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#belongs_to>))
+Declaration(ObjectProperty(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#coached_by>))
+Declaration(ObjectProperty(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#defeated_by>))
+Declaration(ObjectProperty(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#has_home_venue>))
+Declaration(ObjectProperty(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#participates_in>))
+Declaration(ObjectProperty(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#takes_place_at>))
+Declaration(DataProperty(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Address>))
+Declaration(DataProperty(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Athlete_Age>))
+Declaration(DataProperty(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Athlete_Name>))
+Declaration(DataProperty(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Athlete_Nationality>))
+Declaration(DataProperty(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Athlete_Salary>))
+Declaration(DataProperty(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Budget>))
+Declaration(DataProperty(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Capacity>))
+Declaration(DataProperty(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Coach_Age>))
+Declaration(DataProperty(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Coach_Name>))
+Declaration(DataProperty(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Coach_Nationality>))
+Declaration(DataProperty(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Coach_Salary>))
+Declaration(DataProperty(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Competition_Name>))
+Declaration(DataProperty(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Governing_body>))
+Declaration(DataProperty(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Height>))
+Declaration(DataProperty(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Number_of_participants>))
+Declaration(DataProperty(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Number_of_players>))
+Declaration(DataProperty(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Prize_money>))
+Declaration(DataProperty(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Team_Name>))
+Declaration(DataProperty(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Venue_Name>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Anfield>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Arsenal>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Azpilicueta>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#ChampionsLeague>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Chelsea>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#CoachArteta>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#CoachGuardiola>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#CoachKlopp>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#CoachMourinho>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#CoachTuchel>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#DeBruyne>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Emirates>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Etihad>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Firmino>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Haaland>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Kante>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Liverpool>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#ManCity>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#ManUtd>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Odegaard>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#OldTrafford>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#PremierLeague>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Ramsdale>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Ronaldo>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Rooney>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Salah>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#StamfordBridge>))
+############################
+#   Object Properties
+############################
+
+# Object Property: <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#belongs_to> (<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#belongs_to>)
+
+SubObjectPropertyOf(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#belongs_to> owl:topObjectProperty)
+ObjectPropertyDomain(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#belongs_to> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Athletes>)
+ObjectPropertyRange(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#belongs_to> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Teams>)
+
+# Object Property: <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#coached_by> (<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#coached_by>)
+
+SubObjectPropertyOf(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#coached_by> owl:topObjectProperty)
+ObjectPropertyDomain(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#coached_by> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Teams>)
+ObjectPropertyRange(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#coached_by> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Coach>)
+
+# Object Property: <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#defeated_by> (<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#defeated_by>)
+
+SubObjectPropertyOf(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#defeated_by> owl:topObjectProperty)
+ObjectPropertyDomain(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#defeated_by> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Teams>)
+ObjectPropertyRange(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#defeated_by> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Teams>)
+
+# Object Property: <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#has_home_venue> (<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#has_home_venue>)
+
+SubObjectPropertyOf(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#has_home_venue> owl:topObjectProperty)
+ObjectPropertyDomain(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#has_home_venue> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Teams>)
+ObjectPropertyRange(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#has_home_venue> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Venues>)
+
+# Object Property: <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#participates_in> (<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#participates_in>)
+
+SubObjectPropertyOf(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#participates_in> owl:topObjectProperty)
+ObjectPropertyDomain(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#participates_in> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Teams>)
+ObjectPropertyRange(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#participates_in> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Competitions>)
+
+# Object Property: <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#takes_place_at> (<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#takes_place_at>)
+
+SubObjectPropertyOf(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#takes_place_at> owl:topObjectProperty)
+ObjectPropertyDomain(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#takes_place_at> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Competitions>)
+ObjectPropertyRange(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#takes_place_at> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Venues>)
+
+
+############################
+#   Data Properties
+############################
+
+# Data Property: <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Address> (<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Address>)
+
+SubDataPropertyOf(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Address> owl:topDataProperty)
+DataPropertyDomain(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Address> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Venues>)
+DataPropertyRange(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Address> xsd:string)
+
+# Data Property: <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Athlete_Age> (<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Athlete_Age>)
+
+SubDataPropertyOf(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Athlete_Age> owl:topDataProperty)
+DataPropertyDomain(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Athlete_Age> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Athletes>)
+DataPropertyDomain(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Athlete_Age> DataSomeValuesFrom(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Athlete_Age> DatatypeRestriction(xsd:integer xsd:minExclusive "15"^^xsd:integer xsd:maxInclusive "100"^^xsd:integer)))
+DataPropertyRange(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Athlete_Age> xsd:integer)
+
+# Data Property: <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Athlete_Name> (<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Athlete_Name>)
+
+SubDataPropertyOf(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Athlete_Name> owl:topDataProperty)
+DataPropertyDomain(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Athlete_Name> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Athletes>)
+DataPropertyRange(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Athlete_Name> xsd:string)
+
+# Data Property: <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Athlete_Nationality> (<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Athlete_Nationality>)
+
+SubDataPropertyOf(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Athlete_Nationality> owl:topDataProperty)
+DataPropertyDomain(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Athlete_Nationality> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Athletes>)
+DataPropertyRange(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Athlete_Nationality> xsd:string)
+
+# Data Property: <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Athlete_Salary> (<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Athlete_Salary>)
+
+SubDataPropertyOf(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Athlete_Salary> owl:topDataProperty)
+DataPropertyDomain(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Athlete_Salary> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Athletes>)
+DataPropertyDomain(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Athlete_Salary> DataSomeValuesFrom(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Athlete_Salary> DatatypeRestriction(xsd:float xsd:minExclusive "10000.0"^^xsd:float xsd:maxInclusive "5.0E8"^^xsd:float)))
+DataPropertyRange(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Athlete_Salary> xsd:float)
+
+# Data Property: <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Budget> (<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Budget>)
+
+SubDataPropertyOf(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Budget> owl:topDataProperty)
+DataPropertyDomain(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Budget> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Teams>)
+DataPropertyDomain(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Budget> DataSomeValuesFrom(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Budget> DatatypeRestriction(xsd:float xsd:minExclusive "1000000.0"^^xsd:float xsd:maxInclusive "2.0E9"^^xsd:float)))
+DataPropertyRange(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Budget> xsd:float)
+
+# Data Property: <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Capacity> (<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Capacity>)
+
+SubDataPropertyOf(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Capacity> owl:topDataProperty)
+DataPropertyDomain(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Capacity> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Venues>)
+DataPropertyDomain(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Capacity> DataSomeValuesFrom(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Capacity> DatatypeRestriction(xsd:integer xsd:minExclusive "5000"^^xsd:integer xsd:maxInclusive "150000"^^xsd:integer)))
+DataPropertyRange(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Capacity> xsd:integer)
+
+# Data Property: <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Coach_Age> (<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Coach_Age>)
+
+SubDataPropertyOf(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Coach_Age> owl:topDataProperty)
+DataPropertyDomain(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Coach_Age> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Coach>)
+DataPropertyDomain(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Coach_Age> DataSomeValuesFrom(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Coach_Age> DatatypeRestriction(xsd:integer xsd:minExclusive "15"^^xsd:integer xsd:maxInclusive "100"^^xsd:integer)))
+DataPropertyRange(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Coach_Age> xsd:integer)
+
+# Data Property: <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Coach_Name> (<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Coach_Name>)
+
+SubDataPropertyOf(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Coach_Name> owl:topDataProperty)
+DataPropertyDomain(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Coach_Name> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Coach>)
+DataPropertyRange(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Coach_Name> xsd:string)
+
+# Data Property: <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Coach_Nationality> (<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Coach_Nationality>)
+
+SubDataPropertyOf(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Coach_Nationality> owl:topDataProperty)
+DataPropertyDomain(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Coach_Nationality> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Coach>)
+DataPropertyRange(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Coach_Nationality> xsd:string)
+
+# Data Property: <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Coach_Salary> (<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Coach_Salary>)
+
+SubDataPropertyOf(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Coach_Salary> owl:topDataProperty)
+DataPropertyDomain(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Coach_Salary> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Coach>)
+DataPropertyDomain(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Coach_Salary> DataSomeValuesFrom(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Coach_Salary> DatatypeRestriction(xsd:float xsd:minExclusive "10000.0"^^xsd:float xsd:maxInclusive "5.0E8"^^xsd:float)))
+DataPropertyRange(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Coach_Salary> xsd:float)
+
+# Data Property: <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Competition_Name> (<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Competition_Name>)
+
+SubDataPropertyOf(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Competition_Name> owl:topDataProperty)
+DataPropertyDomain(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Competition_Name> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Competitions>)
+DataPropertyRange(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Competition_Name> xsd:string)
+
+# Data Property: <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Governing_body> (<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Governing_body>)
+
+SubDataPropertyOf(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Governing_body> owl:topDataProperty)
+DataPropertyDomain(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Governing_body> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Competitions>)
+DataPropertyDomain(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Governing_body> ObjectUnionOf(DataHasValue(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Governing_body> "AFC") DataHasValue(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Governing_body> "CAF") DataHasValue(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Governing_body> "CONMEBOL") DataHasValue(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Governing_body> "LIBERTADORES") DataHasValue(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Governing_body> "UEFA")))
+DataPropertyRange(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Governing_body> xsd:string)
+
+# Data Property: <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Height> (<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Height>)
+
+SubDataPropertyOf(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Height> owl:topDataProperty)
+DataPropertyDomain(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Height> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Athletes>)
+DataPropertyRange(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Height> xsd:float)
+
+# Data Property: <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Number_of_participants> (<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Number_of_participants>)
+
+SubDataPropertyOf(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Number_of_participants> owl:topDataProperty)
+DataPropertyDomain(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Number_of_participants> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Competitions>)
+DataPropertyDomain(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Number_of_participants> DataSomeValuesFrom(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Number_of_participants> DatatypeRestriction(xsd:integer xsd:minInclusive "2"^^xsd:integer xsd:maxInclusive "256"^^xsd:integer)))
+DataPropertyRange(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Number_of_participants> xsd:integer)
+
+# Data Property: <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Number_of_players> (<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Number_of_players>)
+
+SubDataPropertyOf(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Number_of_players> owl:topDataProperty)
+DataPropertyDomain(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Number_of_players> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Teams>)
+DataPropertyDomain(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Number_of_players> DataSomeValuesFrom(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Number_of_players> DatatypeRestriction(xsd:integer xsd:minInclusive "1"^^xsd:integer xsd:maxInclusive "100"^^xsd:integer)))
+DataPropertyRange(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Number_of_players> xsd:integer)
+
+# Data Property: <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Prize_money> (<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Prize_money>)
+
+SubDataPropertyOf(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Prize_money> owl:topDataProperty)
+DataPropertyDomain(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Prize_money> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Competitions>)
+DataPropertyDomain(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Prize_money> DataSomeValuesFrom(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Prize_money> DatatypeRestriction(xsd:float xsd:minExclusive "100000.0"^^xsd:float xsd:maxInclusive "1.0E9"^^xsd:float)))
+DataPropertyRange(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Prize_money> xsd:float)
+
+# Data Property: <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Team_Name> (<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Team_Name>)
+
+SubDataPropertyOf(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Team_Name> owl:topDataProperty)
+DataPropertyDomain(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Team_Name> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Teams>)
+DataPropertyRange(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Team_Name> xsd:string)
+
+# Data Property: <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Venue_Name> (<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Venue_Name>)
+
+SubDataPropertyOf(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Venue_Name> owl:topDataProperty)
+DataPropertyDomain(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Venue_Name> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Venues>)
+DataPropertyRange(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Venue_Name> xsd:string)
+
+
+
+############################
+#   Classes
+############################
+
+# Class: <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Athletes> (<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Athletes>)
+
+EquivalentClasses(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Athletes> ObjectExactCardinality(1 <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#belongs_to> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Teams>))
+SubClassOf(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Athletes> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Sports>)
+
+# Class: <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Coach> (<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Coach>)
+
+SubClassOf(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Coach> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Sports>)
+
+# Class: <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Competitions> (<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Competitions>)
+
+EquivalentClasses(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Competitions> ObjectMinCardinality(1 <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#takes_place_at> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Venues>))
+SubClassOf(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Competitions> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Sports>)
+
+# Class: <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Teams> (<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Teams>)
+
+EquivalentClasses(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Teams> ObjectMinCardinality(1 <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#participates_in> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Competitions>))
+EquivalentClasses(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Teams> ObjectExactCardinality(1 <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#coached_by> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Coach>))
+EquivalentClasses(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Teams> ObjectExactCardinality(1 <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#has_home_venue> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Venues>))
+EquivalentClasses(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Teams> ObjectMaxCardinality(20 <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#defeated_by> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Teams>))
+EquivalentClasses(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Teams> ObjectMaxCardinality(7 <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#participates_in> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Competitions>))
+SubClassOf(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Teams> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Sports>)
+
+# Class: <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Venues> (<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Venues>)
+
+SubClassOf(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Venues> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Sports>)
+
+
+############################
+#   Named Individuals
+############################
+
+# Individual: <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Anfield> (<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Anfield>)
+
+ClassAssertion(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Venues> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Anfield>)
+DataPropertyAssertion(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Address> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Anfield> "Liverpool")
+DataPropertyAssertion(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Capacity> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Anfield> "50000"^^xsd:integer)
+DataPropertyAssertion(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Venue_Name> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Anfield> "Anfield")
+
+# Individual: <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Arsenal> (<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Arsenal>)
+
+ClassAssertion(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Teams> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Arsenal>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#coached_by> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Arsenal> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#CoachArteta>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#defeated_by> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Arsenal> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#ManCity>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#has_home_venue> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Arsenal> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Emirates>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#participates_in> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Arsenal> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#ChampionsLeague>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#participates_in> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Arsenal> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#PremierLeague>)
+DataPropertyAssertion(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Budget> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Arsenal> "3.0E8"^^xsd:float)
+DataPropertyAssertion(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Number_of_players> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Arsenal> "36"^^xsd:integer)
+DataPropertyAssertion(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Team_Name> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Arsenal> "Arsenal")
+
+# Individual: <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Azpilicueta> (<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Azpilicueta>)
+
+ClassAssertion(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Athletes> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Azpilicueta>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#belongs_to> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Azpilicueta> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Chelsea>)
+DataPropertyAssertion(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Athlete_Age> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Azpilicueta> "32"^^xsd:integer)
+DataPropertyAssertion(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Athlete_Name> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Azpilicueta> "Azpilicueta")
+DataPropertyAssertion(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Athlete_Nationality> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Azpilicueta> "Spanish")
+DataPropertyAssertion(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Athlete_Salary> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Azpilicueta> "1.2E7"^^xsd:float)
+
+# Individual: <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#ChampionsLeague> (<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#ChampionsLeague>)
+
+ClassAssertion(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Competitions> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#ChampionsLeague>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#takes_place_at> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#ChampionsLeague> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Anfield>)
+DataPropertyAssertion(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Competition_Name> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#ChampionsLeague> "ChampionsLeague")
+DataPropertyAssertion(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Governing_body> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#ChampionsLeague> "UEFA")
+DataPropertyAssertion(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Number_of_participants> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#ChampionsLeague> "32"^^xsd:integer)
+DataPropertyAssertion(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Prize_money> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#ChampionsLeague> "1.0E9"^^xsd:float)
+
+# Individual: <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Chelsea> (<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Chelsea>)
+
+ClassAssertion(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Teams> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Chelsea>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#coached_by> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Chelsea> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#CoachTuchel>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#defeated_by> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Chelsea> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Arsenal>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#defeated_by> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Chelsea> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Liverpool>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#defeated_by> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Chelsea> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#ManCity>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#has_home_venue> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Chelsea> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#StamfordBridge>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#participates_in> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Chelsea> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#ChampionsLeague>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#participates_in> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Chelsea> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#PremierLeague>)
+DataPropertyAssertion(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Budget> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Chelsea> "6.0E8"^^xsd:float)
+DataPropertyAssertion(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Number_of_players> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Chelsea> "55"^^xsd:integer)
+DataPropertyAssertion(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Team_Name> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Chelsea> "Chelsea")
+
+# Individual: <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#CoachArteta> (<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#CoachArteta>)
+
+ClassAssertion(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Coach> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#CoachArteta>)
+DataPropertyAssertion(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Coach_Age> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#CoachArteta> "45"^^xsd:integer)
+DataPropertyAssertion(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Coach_Name> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#CoachArteta> "CoachArteta")
+DataPropertyAssertion(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Coach_Nationality> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#CoachArteta> "Spanish")
+DataPropertyAssertion(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Coach_Salary> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#CoachArteta> "6000000.0"^^xsd:float)
+
+# Individual: <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#CoachGuardiola> (<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#CoachGuardiola>)
+
+ClassAssertion(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Coach> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#CoachGuardiola>)
+DataPropertyAssertion(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Coach_Age> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#CoachGuardiola> "55"^^xsd:integer)
+DataPropertyAssertion(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Coach_Name> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#CoachGuardiola> "CoachGuardiola")
+DataPropertyAssertion(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Coach_Nationality> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#CoachGuardiola> "Spanish")
+DataPropertyAssertion(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Coach_Salary> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#CoachGuardiola> "1.5E7"^^xsd:float)
+
+# Individual: <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#CoachKlopp> (<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#CoachKlopp>)
+
+ClassAssertion(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Coach> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#CoachKlopp>)
+DataPropertyAssertion(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Coach_Age> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#CoachKlopp> "53"^^xsd:integer)
+DataPropertyAssertion(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Coach_Name> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#CoachKlopp> "CoachKlopp")
+DataPropertyAssertion(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Coach_Nationality> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#CoachKlopp> "German")
+DataPropertyAssertion(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Coach_Salary> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#CoachKlopp> "1.0E7"^^xsd:float)
+
+# Individual: <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#CoachMourinho> (<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#CoachMourinho>)
+
+ClassAssertion(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Coach> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#CoachMourinho>)
+DataPropertyAssertion(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Coach_Age> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#CoachMourinho> "60"^^xsd:integer)
+DataPropertyAssertion(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Coach_Name> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#CoachMourinho> "CoachMourinho")
+DataPropertyAssertion(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Coach_Nationality> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#CoachMourinho> "Portuguese")
+DataPropertyAssertion(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Coach_Salary> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#CoachMourinho> "1.8E7"^^xsd:float)
+
+# Individual: <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#CoachTuchel> (<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#CoachTuchel>)
+
+ClassAssertion(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Coach> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#CoachTuchel>)
+DataPropertyAssertion(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Coach_Age> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#CoachTuchel> "42"^^xsd:integer)
+DataPropertyAssertion(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Coach_Name> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#CoachTuchel> "CoachTuchel")
+DataPropertyAssertion(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Coach_Nationality> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#CoachTuchel> "German")
+DataPropertyAssertion(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Coach_Salary> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#CoachTuchel> "1.6E7"^^xsd:float)
+
+# Individual: <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#DeBruyne> (<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#DeBruyne>)
+
+ClassAssertion(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Athletes> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#DeBruyne>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#belongs_to> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#DeBruyne> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#ManCity>)
+DataPropertyAssertion(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Athlete_Age> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#DeBruyne> "31"^^xsd:integer)
+DataPropertyAssertion(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Athlete_Name> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#DeBruyne> "DeBruyne")
+DataPropertyAssertion(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Athlete_Nationality> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#DeBruyne> "Belgian")
+DataPropertyAssertion(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Athlete_Salary> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#DeBruyne> "3.0E7"^^xsd:float)
+
+# Individual: <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Emirates> (<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Emirates>)
+
+ClassAssertion(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Venues> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Emirates>)
+DataPropertyAssertion(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Address> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Emirates> "London")
+DataPropertyAssertion(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Capacity> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Emirates> "60000"^^xsd:integer)
+DataPropertyAssertion(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Venue_Name> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Emirates> "Emirates")
+
+# Individual: <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Etihad> (<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Etihad>)
+
+ClassAssertion(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Venues> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Etihad>)
+DataPropertyAssertion(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Address> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Etihad> "Manchester")
+DataPropertyAssertion(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Capacity> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Etihad> "55000"^^xsd:integer)
+DataPropertyAssertion(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Venue_Name> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Etihad> "Etihad")
+
+# Individual: <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Firmino> (<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Firmino>)
+
+ClassAssertion(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Athletes> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Firmino>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#belongs_to> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Firmino> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Liverpool>)
+DataPropertyAssertion(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Athlete_Age> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Firmino> "33"^^xsd:integer)
+DataPropertyAssertion(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Athlete_Name> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Firmino> "Firmino")
+DataPropertyAssertion(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Athlete_Nationality> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Firmino> "Brazilian")
+DataPropertyAssertion(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Athlete_Salary> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Firmino> "1.5E7"^^xsd:float)
+
+# Individual: <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Haaland> (<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Haaland>)
+
+ClassAssertion(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Athletes> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Haaland>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#belongs_to> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Haaland> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#ManCity>)
+DataPropertyAssertion(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Athlete_Age> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Haaland> "21"^^xsd:integer)
+DataPropertyAssertion(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Athlete_Name> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Haaland> "Haaland")
+DataPropertyAssertion(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Athlete_Nationality> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Haaland> "Norwegian")
+DataPropertyAssertion(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Athlete_Salary> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Haaland> "4.0E7"^^xsd:float)
+DataPropertyAssertion(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Height> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Haaland> "1.94"^^xsd:float)
+
+# Individual: <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Kante> (<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Kante>)
+
+ClassAssertion(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Athletes> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Kante>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#belongs_to> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Kante> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Chelsea>)
+DataPropertyAssertion(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Athlete_Age> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Kante> "32"^^xsd:integer)
+DataPropertyAssertion(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Athlete_Name> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Kante> "Kante")
+DataPropertyAssertion(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Athlete_Nationality> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Kante> "French")
+DataPropertyAssertion(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Athlete_Salary> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Kante> "2.5E7"^^xsd:float)
+
+# Individual: <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Liverpool> (<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Liverpool>)
+
+ClassAssertion(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Teams> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Liverpool>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#coached_by> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Liverpool> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#CoachKlopp>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#defeated_by> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Liverpool> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Arsenal>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#defeated_by> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Liverpool> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#ManUtd>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#has_home_venue> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Liverpool> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Anfield>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#participates_in> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Liverpool> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#ChampionsLeague>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#participates_in> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Liverpool> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#PremierLeague>)
+DataPropertyAssertion(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Budget> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Liverpool> "2.5E8"^^xsd:float)
+DataPropertyAssertion(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Number_of_players> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Liverpool> "30"^^xsd:integer)
+DataPropertyAssertion(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Team_Name> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Liverpool> "Liverpool")
+
+# Individual: <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#ManCity> (<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#ManCity>)
+
+ClassAssertion(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Teams> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#ManCity>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#coached_by> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#ManCity> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#CoachGuardiola>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#defeated_by> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#ManCity> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Liverpool>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#has_home_venue> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#ManCity> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Etihad>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#participates_in> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#ManCity> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#ChampionsLeague>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#participates_in> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#ManCity> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#PremierLeague>)
+DataPropertyAssertion(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Budget> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#ManCity> "7.0E8"^^xsd:float)
+DataPropertyAssertion(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Number_of_players> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#ManCity> "40"^^xsd:integer)
+DataPropertyAssertion(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Team_Name> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#ManCity> "ManCity")
+
+# Individual: <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#ManUtd> (<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#ManUtd>)
+
+ClassAssertion(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Teams> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#ManUtd>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#coached_by> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#ManUtd> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#CoachMourinho>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#defeated_by> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#ManUtd> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Arsenal>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#defeated_by> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#ManUtd> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Liverpool>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#defeated_by> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#ManUtd> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#ManCity>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#has_home_venue> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#ManUtd> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#OldTrafford>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#participates_in> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#ManUtd> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#PremierLeague>)
+DataPropertyAssertion(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Budget> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#ManUtd> "4.6E8"^^xsd:float)
+DataPropertyAssertion(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Number_of_players> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#ManUtd> "46"^^xsd:integer)
+DataPropertyAssertion(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Team_Name> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#ManUtd> "ManUtd")
+
+# Individual: <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Odegaard> (<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Odegaard>)
+
+ClassAssertion(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Athletes> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Odegaard>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#belongs_to> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Odegaard> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Arsenal>)
+DataPropertyAssertion(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Athlete_Age> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Odegaard> "23"^^xsd:integer)
+DataPropertyAssertion(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Athlete_Name> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Odegaard> "Odegaard")
+DataPropertyAssertion(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Athlete_Nationality> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Odegaard> "Norwegian")
+DataPropertyAssertion(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Athlete_Salary> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Odegaard> "1.3E7"^^xsd:float)
+
+# Individual: <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#OldTrafford> (<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#OldTrafford>)
+
+ClassAssertion(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Venues> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#OldTrafford>)
+DataPropertyAssertion(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Address> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#OldTrafford> "Manchester")
+DataPropertyAssertion(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Capacity> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#OldTrafford> "65000"^^xsd:integer)
+DataPropertyAssertion(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Venue_Name> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#OldTrafford> "OldTrafford")
+
+# Individual: <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#PremierLeague> (<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#PremierLeague>)
+
+ClassAssertion(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Competitions> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#PremierLeague>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#takes_place_at> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#PremierLeague> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Anfield>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#takes_place_at> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#PremierLeague> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Emirates>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#takes_place_at> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#PremierLeague> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Etihad>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#takes_place_at> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#PremierLeague> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#OldTrafford>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#takes_place_at> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#PremierLeague> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#StamfordBridge>)
+DataPropertyAssertion(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Competition_Name> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#PremierLeague> "PremierLeague")
+DataPropertyAssertion(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Governing_body> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#PremierLeague> "UEFA")
+DataPropertyAssertion(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Number_of_participants> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#PremierLeague> "20"^^xsd:integer)
+DataPropertyAssertion(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Prize_money> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#PremierLeague> "9.0E8"^^xsd:float)
+
+# Individual: <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Ramsdale> (<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Ramsdale>)
+
+ClassAssertion(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Athletes> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Ramsdale>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#belongs_to> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Ramsdale> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Arsenal>)
+DataPropertyAssertion(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Athlete_Age> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Ramsdale> "24"^^xsd:integer)
+DataPropertyAssertion(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Athlete_Name> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Ramsdale> "Ramsdale")
+DataPropertyAssertion(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Athlete_Nationality> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Ramsdale> "British")
+DataPropertyAssertion(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Athlete_Salary> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Ramsdale> "5000000.0"^^xsd:float)
+
+# Individual: <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Ronaldo> (<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Ronaldo>)
+
+ClassAssertion(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Athletes> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Ronaldo>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#belongs_to> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Ronaldo> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#ManUtd>)
+DataPropertyAssertion(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Athlete_Age> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Ronaldo> "38"^^xsd:integer)
+DataPropertyAssertion(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Athlete_Name> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Ronaldo> "Ronaldo")
+DataPropertyAssertion(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Athlete_Nationality> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Ronaldo> "Portuguese")
+DataPropertyAssertion(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Athlete_Salary> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Ronaldo> "1.0E8"^^xsd:float)
+
+# Individual: <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Rooney> (<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Rooney>)
+
+ClassAssertion(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Athletes> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Rooney>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#belongs_to> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Rooney> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#ManUtd>)
+DataPropertyAssertion(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Athlete_Age> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Rooney> "40"^^xsd:integer)
+DataPropertyAssertion(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Athlete_Name> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Rooney> "Rooney")
+DataPropertyAssertion(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Athlete_Nationality> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Rooney> "British")
+DataPropertyAssertion(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Athlete_Salary> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Rooney> "1.7E7"^^xsd:float)
+
+# Individual: <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Salah> (<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Salah>)
+
+ClassAssertion(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Athletes> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Salah>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#belongs_to> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Salah> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Liverpool>)
+DataPropertyAssertion(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Athlete_Age> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Salah> "31"^^xsd:integer)
+DataPropertyAssertion(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Athlete_Name> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Salah> "Salah")
+DataPropertyAssertion(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Athlete_Nationality> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Salah> "Egyptian")
+DataPropertyAssertion(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Athlete_Salary> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Salah> "3.1E7"^^xsd:float)
+DataPropertyAssertion(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Height> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Salah> "1.75"^^xsd:float)
+
+# Individual: <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#StamfordBridge> (<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#StamfordBridge>)
+
+ClassAssertion(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Venues> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#StamfordBridge>)
+DataPropertyAssertion(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Address> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#StamfordBridge> "London")
+DataPropertyAssertion(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Capacity> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#StamfordBridge> "45000"^^xsd:integer)
+DataPropertyAssertion(<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Venue_Name> <http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#StamfordBridge> "StamfordBridge")
+
+
+)

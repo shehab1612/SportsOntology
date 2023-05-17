@@ -1,0 +1,1557 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46">
+    <Prefix name="" IRI="http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46/"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Import>http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46</Import>
+    <Declaration>
+        <Class IRI="#Athletes"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Coach"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Competitions"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sports"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Teams"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Venues"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#belongs_to"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#coached_by"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#defeated_by"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_home_venue"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#participates_in"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#takes_place_at"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Address"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Athlete_Age"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Athlete_Name"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Athlete_Nationality"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Athlete_Salary"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Budget"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Capacity"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Coach_Age"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Coach_Name"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Coach_Nationality"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Coach_Salary"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Competition_Name"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Governing_body"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Height"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Number_of_participants"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Number_of_players"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Prize_money"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Team_Name"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Venue_Name"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Anfield"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Arsenal"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Azpilicueta"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ChampionsLeague"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Chelsea"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CoachArteta"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CoachGuardiola"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CoachKlopp"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CoachMourinho"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CoachTuchel"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#DeBruyne"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Emirates"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Etihad"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Firmino"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Haaland"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Kante"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Liverpool"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ManCity"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ManUtd"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Odegaard"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#OldTrafford"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PremierLeague"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Ramsdale"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Ronaldo"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Rooney"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Salah"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#StamfordBridge"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="#Athletes"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#belongs_to"/>
+            <Class IRI="#Teams"/>
+        </ObjectExactCardinality>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Competitions"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="#takes_place_at"/>
+            <Class IRI="#Venues"/>
+        </ObjectMinCardinality>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Teams"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="#participates_in"/>
+            <Class IRI="#Competitions"/>
+        </ObjectMinCardinality>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Teams"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#coached_by"/>
+            <Class IRI="#Coach"/>
+        </ObjectExactCardinality>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Teams"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#has_home_venue"/>
+            <Class IRI="#Venues"/>
+        </ObjectExactCardinality>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Teams"/>
+        <ObjectMaxCardinality cardinality="20">
+            <ObjectProperty IRI="#defeated_by"/>
+            <Class IRI="#Teams"/>
+        </ObjectMaxCardinality>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Teams"/>
+        <ObjectMaxCardinality cardinality="7">
+            <ObjectProperty IRI="#participates_in"/>
+            <Class IRI="#Competitions"/>
+        </ObjectMaxCardinality>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="#Athletes"/>
+        <Class IRI="#Sports"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Coach"/>
+        <Class IRI="#Sports"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Competitions"/>
+        <Class IRI="#Sports"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Teams"/>
+        <Class IRI="#Sports"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Venues"/>
+        <Class IRI="#Sports"/>
+    </SubClassOf>
+    <ClassAssertion>
+        <Class IRI="#Venues"/>
+        <NamedIndividual IRI="#Anfield"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Teams"/>
+        <NamedIndividual IRI="#Arsenal"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Athletes"/>
+        <NamedIndividual IRI="#Azpilicueta"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Competitions"/>
+        <NamedIndividual IRI="#ChampionsLeague"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Teams"/>
+        <NamedIndividual IRI="#Chelsea"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Coach"/>
+        <NamedIndividual IRI="#CoachArteta"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Coach"/>
+        <NamedIndividual IRI="#CoachGuardiola"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Coach"/>
+        <NamedIndividual IRI="#CoachKlopp"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Coach"/>
+        <NamedIndividual IRI="#CoachMourinho"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Coach"/>
+        <NamedIndividual IRI="#CoachTuchel"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Athletes"/>
+        <NamedIndividual IRI="#DeBruyne"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Venues"/>
+        <NamedIndividual IRI="#Emirates"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Venues"/>
+        <NamedIndividual IRI="#Etihad"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Athletes"/>
+        <NamedIndividual IRI="#Firmino"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Athletes"/>
+        <NamedIndividual IRI="#Haaland"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Athletes"/>
+        <NamedIndividual IRI="#Kante"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Teams"/>
+        <NamedIndividual IRI="#Liverpool"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Teams"/>
+        <NamedIndividual IRI="#ManCity"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Teams"/>
+        <NamedIndividual IRI="#ManUtd"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Athletes"/>
+        <NamedIndividual IRI="#Odegaard"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Venues"/>
+        <NamedIndividual IRI="#OldTrafford"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Competitions"/>
+        <NamedIndividual IRI="#PremierLeague"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Athletes"/>
+        <NamedIndividual IRI="#Ramsdale"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Athletes"/>
+        <NamedIndividual IRI="#Ronaldo"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Athletes"/>
+        <NamedIndividual IRI="#Rooney"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Athletes"/>
+        <NamedIndividual IRI="#Salah"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Venues"/>
+        <NamedIndividual IRI="#StamfordBridge"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#coached_by"/>
+        <NamedIndividual IRI="#Arsenal"/>
+        <NamedIndividual IRI="#CoachArteta"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#defeated_by"/>
+        <NamedIndividual IRI="#Arsenal"/>
+        <NamedIndividual IRI="#ManCity"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_home_venue"/>
+        <NamedIndividual IRI="#Arsenal"/>
+        <NamedIndividual IRI="#Emirates"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#participates_in"/>
+        <NamedIndividual IRI="#Arsenal"/>
+        <NamedIndividual IRI="#ChampionsLeague"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#participates_in"/>
+        <NamedIndividual IRI="#Arsenal"/>
+        <NamedIndividual IRI="#PremierLeague"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#belongs_to"/>
+        <NamedIndividual IRI="#Azpilicueta"/>
+        <NamedIndividual IRI="#Chelsea"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#takes_place_at"/>
+        <NamedIndividual IRI="#ChampionsLeague"/>
+        <NamedIndividual IRI="#Anfield"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#coached_by"/>
+        <NamedIndividual IRI="#Chelsea"/>
+        <NamedIndividual IRI="#CoachTuchel"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#defeated_by"/>
+        <NamedIndividual IRI="#Chelsea"/>
+        <NamedIndividual IRI="#Arsenal"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#defeated_by"/>
+        <NamedIndividual IRI="#Chelsea"/>
+        <NamedIndividual IRI="#Liverpool"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#defeated_by"/>
+        <NamedIndividual IRI="#Chelsea"/>
+        <NamedIndividual IRI="#ManCity"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_home_venue"/>
+        <NamedIndividual IRI="#Chelsea"/>
+        <NamedIndividual IRI="#StamfordBridge"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#participates_in"/>
+        <NamedIndividual IRI="#Chelsea"/>
+        <NamedIndividual IRI="#ChampionsLeague"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#participates_in"/>
+        <NamedIndividual IRI="#Chelsea"/>
+        <NamedIndividual IRI="#PremierLeague"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#belongs_to"/>
+        <NamedIndividual IRI="#DeBruyne"/>
+        <NamedIndividual IRI="#ManCity"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#belongs_to"/>
+        <NamedIndividual IRI="#Firmino"/>
+        <NamedIndividual IRI="#Liverpool"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#belongs_to"/>
+        <NamedIndividual IRI="#Haaland"/>
+        <NamedIndividual IRI="#ManCity"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#belongs_to"/>
+        <NamedIndividual IRI="#Kante"/>
+        <NamedIndividual IRI="#Chelsea"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#coached_by"/>
+        <NamedIndividual IRI="#Liverpool"/>
+        <NamedIndividual IRI="#CoachKlopp"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#defeated_by"/>
+        <NamedIndividual IRI="#Liverpool"/>
+        <NamedIndividual IRI="#Arsenal"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#defeated_by"/>
+        <NamedIndividual IRI="#Liverpool"/>
+        <NamedIndividual IRI="#ManUtd"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_home_venue"/>
+        <NamedIndividual IRI="#Liverpool"/>
+        <NamedIndividual IRI="#Anfield"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#participates_in"/>
+        <NamedIndividual IRI="#Liverpool"/>
+        <NamedIndividual IRI="#ChampionsLeague"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#participates_in"/>
+        <NamedIndividual IRI="#Liverpool"/>
+        <NamedIndividual IRI="#PremierLeague"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#coached_by"/>
+        <NamedIndividual IRI="#ManCity"/>
+        <NamedIndividual IRI="#CoachGuardiola"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#defeated_by"/>
+        <NamedIndividual IRI="#ManCity"/>
+        <NamedIndividual IRI="#Liverpool"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_home_venue"/>
+        <NamedIndividual IRI="#ManCity"/>
+        <NamedIndividual IRI="#Etihad"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#participates_in"/>
+        <NamedIndividual IRI="#ManCity"/>
+        <NamedIndividual IRI="#ChampionsLeague"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#participates_in"/>
+        <NamedIndividual IRI="#ManCity"/>
+        <NamedIndividual IRI="#PremierLeague"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#coached_by"/>
+        <NamedIndividual IRI="#ManUtd"/>
+        <NamedIndividual IRI="#CoachMourinho"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#defeated_by"/>
+        <NamedIndividual IRI="#ManUtd"/>
+        <NamedIndividual IRI="#Arsenal"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#defeated_by"/>
+        <NamedIndividual IRI="#ManUtd"/>
+        <NamedIndividual IRI="#Liverpool"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#defeated_by"/>
+        <NamedIndividual IRI="#ManUtd"/>
+        <NamedIndividual IRI="#ManCity"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_home_venue"/>
+        <NamedIndividual IRI="#ManUtd"/>
+        <NamedIndividual IRI="#OldTrafford"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#participates_in"/>
+        <NamedIndividual IRI="#ManUtd"/>
+        <NamedIndividual IRI="#PremierLeague"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#belongs_to"/>
+        <NamedIndividual IRI="#Odegaard"/>
+        <NamedIndividual IRI="#Arsenal"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#takes_place_at"/>
+        <NamedIndividual IRI="#PremierLeague"/>
+        <NamedIndividual IRI="#Anfield"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#takes_place_at"/>
+        <NamedIndividual IRI="#PremierLeague"/>
+        <NamedIndividual IRI="#Emirates"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#takes_place_at"/>
+        <NamedIndividual IRI="#PremierLeague"/>
+        <NamedIndividual IRI="#Etihad"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#takes_place_at"/>
+        <NamedIndividual IRI="#PremierLeague"/>
+        <NamedIndividual IRI="#OldTrafford"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#takes_place_at"/>
+        <NamedIndividual IRI="#PremierLeague"/>
+        <NamedIndividual IRI="#StamfordBridge"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#belongs_to"/>
+        <NamedIndividual IRI="#Ramsdale"/>
+        <NamedIndividual IRI="#Arsenal"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#belongs_to"/>
+        <NamedIndividual IRI="#Ronaldo"/>
+        <NamedIndividual IRI="#ManUtd"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#belongs_to"/>
+        <NamedIndividual IRI="#Rooney"/>
+        <NamedIndividual IRI="#ManUtd"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#belongs_to"/>
+        <NamedIndividual IRI="#Salah"/>
+        <NamedIndividual IRI="#Liverpool"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Address"/>
+        <NamedIndividual IRI="#Anfield"/>
+        <Literal>Liverpool</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Capacity"/>
+        <NamedIndividual IRI="#Anfield"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">50000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Venue_Name"/>
+        <NamedIndividual IRI="#Anfield"/>
+        <Literal>Anfield</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Budget"/>
+        <NamedIndividual IRI="#Arsenal"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">3.0E8</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Number_of_players"/>
+        <NamedIndividual IRI="#Arsenal"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">36</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Team_Name"/>
+        <NamedIndividual IRI="#Arsenal"/>
+        <Literal>Arsenal</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Athlete_Age"/>
+        <NamedIndividual IRI="#Azpilicueta"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">32</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Athlete_Name"/>
+        <NamedIndividual IRI="#Azpilicueta"/>
+        <Literal>Azpilicueta</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Athlete_Nationality"/>
+        <NamedIndividual IRI="#Azpilicueta"/>
+        <Literal>Spanish</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Athlete_Salary"/>
+        <NamedIndividual IRI="#Azpilicueta"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">1.2E7</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Competition_Name"/>
+        <NamedIndividual IRI="#ChampionsLeague"/>
+        <Literal>ChampionsLeague</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Governing_body"/>
+        <NamedIndividual IRI="#ChampionsLeague"/>
+        <Literal>UEFA</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Number_of_participants"/>
+        <NamedIndividual IRI="#ChampionsLeague"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">32</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Prize_money"/>
+        <NamedIndividual IRI="#ChampionsLeague"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">1.0E9</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Budget"/>
+        <NamedIndividual IRI="#Chelsea"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">6.0E8</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Number_of_players"/>
+        <NamedIndividual IRI="#Chelsea"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">55</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Team_Name"/>
+        <NamedIndividual IRI="#Chelsea"/>
+        <Literal>Chelsea</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Coach_Age"/>
+        <NamedIndividual IRI="#CoachArteta"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">45</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Coach_Name"/>
+        <NamedIndividual IRI="#CoachArteta"/>
+        <Literal>CoachArteta</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Coach_Nationality"/>
+        <NamedIndividual IRI="#CoachArteta"/>
+        <Literal>Spanish</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Coach_Salary"/>
+        <NamedIndividual IRI="#CoachArteta"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">6000000.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Coach_Age"/>
+        <NamedIndividual IRI="#CoachGuardiola"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">55</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Coach_Name"/>
+        <NamedIndividual IRI="#CoachGuardiola"/>
+        <Literal>CoachGuardiola</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Coach_Nationality"/>
+        <NamedIndividual IRI="#CoachGuardiola"/>
+        <Literal>Spanish</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Coach_Salary"/>
+        <NamedIndividual IRI="#CoachGuardiola"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">1.5E7</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Coach_Age"/>
+        <NamedIndividual IRI="#CoachKlopp"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">53</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Coach_Name"/>
+        <NamedIndividual IRI="#CoachKlopp"/>
+        <Literal>CoachKlopp</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Coach_Nationality"/>
+        <NamedIndividual IRI="#CoachKlopp"/>
+        <Literal>German</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Coach_Salary"/>
+        <NamedIndividual IRI="#CoachKlopp"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">1.0E7</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Coach_Age"/>
+        <NamedIndividual IRI="#CoachMourinho"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">60</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Coach_Name"/>
+        <NamedIndividual IRI="#CoachMourinho"/>
+        <Literal>CoachMourinho</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Coach_Nationality"/>
+        <NamedIndividual IRI="#CoachMourinho"/>
+        <Literal>Portuguese</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Coach_Salary"/>
+        <NamedIndividual IRI="#CoachMourinho"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">1.8E7</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Coach_Age"/>
+        <NamedIndividual IRI="#CoachTuchel"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">42</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Coach_Name"/>
+        <NamedIndividual IRI="#CoachTuchel"/>
+        <Literal>CoachTuchel</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Coach_Nationality"/>
+        <NamedIndividual IRI="#CoachTuchel"/>
+        <Literal>German</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Coach_Salary"/>
+        <NamedIndividual IRI="#CoachTuchel"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">1.6E7</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Athlete_Age"/>
+        <NamedIndividual IRI="#DeBruyne"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">31</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Athlete_Name"/>
+        <NamedIndividual IRI="#DeBruyne"/>
+        <Literal>DeBruyne</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Athlete_Nationality"/>
+        <NamedIndividual IRI="#DeBruyne"/>
+        <Literal>Belgian</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Athlete_Salary"/>
+        <NamedIndividual IRI="#DeBruyne"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">3.0E7</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Address"/>
+        <NamedIndividual IRI="#Emirates"/>
+        <Literal>London</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Capacity"/>
+        <NamedIndividual IRI="#Emirates"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">60000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Venue_Name"/>
+        <NamedIndividual IRI="#Emirates"/>
+        <Literal>Emirates</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Address"/>
+        <NamedIndividual IRI="#Etihad"/>
+        <Literal>Manchester</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Capacity"/>
+        <NamedIndividual IRI="#Etihad"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">55000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Venue_Name"/>
+        <NamedIndividual IRI="#Etihad"/>
+        <Literal>Etihad</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Athlete_Age"/>
+        <NamedIndividual IRI="#Firmino"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">33</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Athlete_Name"/>
+        <NamedIndividual IRI="#Firmino"/>
+        <Literal>Firmino</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Athlete_Nationality"/>
+        <NamedIndividual IRI="#Firmino"/>
+        <Literal>Brazilian</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Athlete_Salary"/>
+        <NamedIndividual IRI="#Firmino"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">1.5E7</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Athlete_Age"/>
+        <NamedIndividual IRI="#Haaland"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">21</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Athlete_Name"/>
+        <NamedIndividual IRI="#Haaland"/>
+        <Literal>Haaland</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Athlete_Nationality"/>
+        <NamedIndividual IRI="#Haaland"/>
+        <Literal>Norwegian</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Athlete_Salary"/>
+        <NamedIndividual IRI="#Haaland"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">4.0E7</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Height"/>
+        <NamedIndividual IRI="#Haaland"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">1.94</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Athlete_Age"/>
+        <NamedIndividual IRI="#Kante"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">32</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Athlete_Name"/>
+        <NamedIndividual IRI="#Kante"/>
+        <Literal>Kante</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Athlete_Nationality"/>
+        <NamedIndividual IRI="#Kante"/>
+        <Literal>French</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Athlete_Salary"/>
+        <NamedIndividual IRI="#Kante"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">2.5E7</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Budget"/>
+        <NamedIndividual IRI="#Liverpool"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">2.5E8</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Number_of_players"/>
+        <NamedIndividual IRI="#Liverpool"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">30</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Team_Name"/>
+        <NamedIndividual IRI="#Liverpool"/>
+        <Literal>Liverpool</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Budget"/>
+        <NamedIndividual IRI="#ManCity"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">7.0E8</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Number_of_players"/>
+        <NamedIndividual IRI="#ManCity"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">40</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Team_Name"/>
+        <NamedIndividual IRI="#ManCity"/>
+        <Literal>ManCity</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Budget"/>
+        <NamedIndividual IRI="#ManUtd"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">4.6E8</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Number_of_players"/>
+        <NamedIndividual IRI="#ManUtd"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">46</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Team_Name"/>
+        <NamedIndividual IRI="#ManUtd"/>
+        <Literal>ManUtd</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Athlete_Age"/>
+        <NamedIndividual IRI="#Odegaard"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">23</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Athlete_Name"/>
+        <NamedIndividual IRI="#Odegaard"/>
+        <Literal>Odegaard</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Athlete_Nationality"/>
+        <NamedIndividual IRI="#Odegaard"/>
+        <Literal>Norwegian</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Athlete_Salary"/>
+        <NamedIndividual IRI="#Odegaard"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">1.3E7</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Address"/>
+        <NamedIndividual IRI="#OldTrafford"/>
+        <Literal>Manchester</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Capacity"/>
+        <NamedIndividual IRI="#OldTrafford"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">65000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Venue_Name"/>
+        <NamedIndividual IRI="#OldTrafford"/>
+        <Literal>OldTrafford</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Competition_Name"/>
+        <NamedIndividual IRI="#PremierLeague"/>
+        <Literal>PremierLeague</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Governing_body"/>
+        <NamedIndividual IRI="#PremierLeague"/>
+        <Literal>UEFA</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Number_of_participants"/>
+        <NamedIndividual IRI="#PremierLeague"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">20</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Prize_money"/>
+        <NamedIndividual IRI="#PremierLeague"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">9.0E8</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Athlete_Age"/>
+        <NamedIndividual IRI="#Ramsdale"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">24</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Athlete_Name"/>
+        <NamedIndividual IRI="#Ramsdale"/>
+        <Literal>Ramsdale</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Athlete_Nationality"/>
+        <NamedIndividual IRI="#Ramsdale"/>
+        <Literal>British</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Athlete_Salary"/>
+        <NamedIndividual IRI="#Ramsdale"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">5000000.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Athlete_Age"/>
+        <NamedIndividual IRI="#Ronaldo"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">38</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Athlete_Name"/>
+        <NamedIndividual IRI="#Ronaldo"/>
+        <Literal>Ronaldo</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Athlete_Nationality"/>
+        <NamedIndividual IRI="#Ronaldo"/>
+        <Literal>Portuguese</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Athlete_Salary"/>
+        <NamedIndividual IRI="#Ronaldo"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">1.0E8</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Athlete_Age"/>
+        <NamedIndividual IRI="#Rooney"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">40</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Athlete_Name"/>
+        <NamedIndividual IRI="#Rooney"/>
+        <Literal>Rooney</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Athlete_Nationality"/>
+        <NamedIndividual IRI="#Rooney"/>
+        <Literal>British</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Athlete_Salary"/>
+        <NamedIndividual IRI="#Rooney"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">1.7E7</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Athlete_Age"/>
+        <NamedIndividual IRI="#Salah"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">31</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Athlete_Name"/>
+        <NamedIndividual IRI="#Salah"/>
+        <Literal>Salah</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Athlete_Nationality"/>
+        <NamedIndividual IRI="#Salah"/>
+        <Literal>Egyptian</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Athlete_Salary"/>
+        <NamedIndividual IRI="#Salah"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">3.1E7</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Height"/>
+        <NamedIndividual IRI="#Salah"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">1.75</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Address"/>
+        <NamedIndividual IRI="#StamfordBridge"/>
+        <Literal>London</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Capacity"/>
+        <NamedIndividual IRI="#StamfordBridge"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">45000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Venue_Name"/>
+        <NamedIndividual IRI="#StamfordBridge"/>
+        <Literal>StamfordBridge</Literal>
+    </DataPropertyAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#belongs_to"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#coached_by"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#defeated_by"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#has_home_venue"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#participates_in"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#takes_place_at"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#belongs_to"/>
+        <Class IRI="#Athletes"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#coached_by"/>
+        <Class IRI="#Teams"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#defeated_by"/>
+        <Class IRI="#Teams"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#has_home_venue"/>
+        <Class IRI="#Teams"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#participates_in"/>
+        <Class IRI="#Teams"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#takes_place_at"/>
+        <Class IRI="#Competitions"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#belongs_to"/>
+        <Class IRI="#Teams"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#coached_by"/>
+        <Class IRI="#Coach"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#defeated_by"/>
+        <Class IRI="#Teams"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#has_home_venue"/>
+        <Class IRI="#Venues"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#participates_in"/>
+        <Class IRI="#Competitions"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#takes_place_at"/>
+        <Class IRI="#Venues"/>
+    </ObjectPropertyRange>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Address"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Athlete_Age"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Athlete_Name"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Athlete_Nationality"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Athlete_Salary"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Budget"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Capacity"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Coach_Age"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Coach_Name"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Coach_Nationality"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Coach_Salary"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Competition_Name"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Governing_body"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Height"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Number_of_participants"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Number_of_players"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Prize_money"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Team_Name"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Venue_Name"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Address"/>
+        <Class IRI="#Venues"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Athlete_Age"/>
+        <Class IRI="#Athletes"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Athlete_Age"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#Athlete_Age"/>
+            <DatatypeRestriction>
+                <Datatype abbreviatedIRI="xsd:integer"/>
+                <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minExclusive">
+                    <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">15</Literal>
+                </FacetRestriction>
+                <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
+                    <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">100</Literal>
+                </FacetRestriction>
+            </DatatypeRestriction>
+        </DataSomeValuesFrom>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Athlete_Name"/>
+        <Class IRI="#Athletes"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Athlete_Nationality"/>
+        <Class IRI="#Athletes"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Athlete_Salary"/>
+        <Class IRI="#Athletes"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Athlete_Salary"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#Athlete_Salary"/>
+            <DatatypeRestriction>
+                <Datatype abbreviatedIRI="xsd:float"/>
+                <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minExclusive">
+                    <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">10000.0</Literal>
+                </FacetRestriction>
+                <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
+                    <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">5.0E8</Literal>
+                </FacetRestriction>
+            </DatatypeRestriction>
+        </DataSomeValuesFrom>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Budget"/>
+        <Class IRI="#Teams"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Budget"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#Budget"/>
+            <DatatypeRestriction>
+                <Datatype abbreviatedIRI="xsd:float"/>
+                <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minExclusive">
+                    <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">1000000.0</Literal>
+                </FacetRestriction>
+                <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
+                    <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">2.0E9</Literal>
+                </FacetRestriction>
+            </DatatypeRestriction>
+        </DataSomeValuesFrom>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Capacity"/>
+        <Class IRI="#Venues"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Capacity"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#Capacity"/>
+            <DatatypeRestriction>
+                <Datatype abbreviatedIRI="xsd:integer"/>
+                <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minExclusive">
+                    <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">5000</Literal>
+                </FacetRestriction>
+                <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
+                    <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">150000</Literal>
+                </FacetRestriction>
+            </DatatypeRestriction>
+        </DataSomeValuesFrom>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Coach_Age"/>
+        <Class IRI="#Coach"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Coach_Age"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#Coach_Age"/>
+            <DatatypeRestriction>
+                <Datatype abbreviatedIRI="xsd:integer"/>
+                <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minExclusive">
+                    <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">15</Literal>
+                </FacetRestriction>
+                <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
+                    <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">100</Literal>
+                </FacetRestriction>
+            </DatatypeRestriction>
+        </DataSomeValuesFrom>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Coach_Name"/>
+        <Class IRI="#Coach"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Coach_Nationality"/>
+        <Class IRI="#Coach"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Coach_Salary"/>
+        <Class IRI="#Coach"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Coach_Salary"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#Coach_Salary"/>
+            <DatatypeRestriction>
+                <Datatype abbreviatedIRI="xsd:float"/>
+                <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minExclusive">
+                    <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">10000.0</Literal>
+                </FacetRestriction>
+                <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
+                    <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">5.0E8</Literal>
+                </FacetRestriction>
+            </DatatypeRestriction>
+        </DataSomeValuesFrom>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Competition_Name"/>
+        <Class IRI="#Competitions"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Governing_body"/>
+        <Class IRI="#Competitions"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Governing_body"/>
+        <ObjectUnionOf>
+            <DataHasValue>
+                <DataProperty IRI="#Governing_body"/>
+                <Literal>AFC</Literal>
+            </DataHasValue>
+            <DataHasValue>
+                <DataProperty IRI="#Governing_body"/>
+                <Literal>CAF</Literal>
+            </DataHasValue>
+            <DataHasValue>
+                <DataProperty IRI="#Governing_body"/>
+                <Literal>CONMEBOL</Literal>
+            </DataHasValue>
+            <DataHasValue>
+                <DataProperty IRI="#Governing_body"/>
+                <Literal>LIBERTADORES</Literal>
+            </DataHasValue>
+            <DataHasValue>
+                <DataProperty IRI="#Governing_body"/>
+                <Literal>UEFA</Literal>
+            </DataHasValue>
+        </ObjectUnionOf>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Height"/>
+        <Class IRI="#Athletes"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Number_of_participants"/>
+        <Class IRI="#Competitions"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Number_of_participants"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#Number_of_participants"/>
+            <DatatypeRestriction>
+                <Datatype abbreviatedIRI="xsd:integer"/>
+                <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
+                    <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2</Literal>
+                </FacetRestriction>
+                <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
+                    <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">256</Literal>
+                </FacetRestriction>
+            </DatatypeRestriction>
+        </DataSomeValuesFrom>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Number_of_players"/>
+        <Class IRI="#Teams"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Number_of_players"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#Number_of_players"/>
+            <DatatypeRestriction>
+                <Datatype abbreviatedIRI="xsd:integer"/>
+                <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
+                    <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1</Literal>
+                </FacetRestriction>
+                <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
+                    <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">100</Literal>
+                </FacetRestriction>
+            </DatatypeRestriction>
+        </DataSomeValuesFrom>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Prize_money"/>
+        <Class IRI="#Competitions"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Prize_money"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#Prize_money"/>
+            <DatatypeRestriction>
+                <Datatype abbreviatedIRI="xsd:float"/>
+                <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minExclusive">
+                    <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">100000.0</Literal>
+                </FacetRestriction>
+                <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
+                    <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">1.0E9</Literal>
+                </FacetRestriction>
+            </DatatypeRestriction>
+        </DataSomeValuesFrom>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Team_Name"/>
+        <Class IRI="#Teams"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Venue_Name"/>
+        <Class IRI="#Venues"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#Address"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Athlete_Age"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Athlete_Name"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Athlete_Nationality"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Athlete_Salary"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Budget"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Capacity"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Coach_Age"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Coach_Name"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Coach_Nationality"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Coach_Salary"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Competition_Name"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Governing_body"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Height"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Number_of_participants"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Number_of_players"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Prize_money"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Team_Name"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Venue_Name"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi -->
+

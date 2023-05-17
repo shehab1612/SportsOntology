@@ -1,0 +1,956 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46/"
+     xml:base="http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:untitled-ontology-46="http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46">
+        <owl:imports rdf:resource="http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#belongs_to -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#belongs_to">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Athletes"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Teams"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#coached_by -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#coached_by">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Teams"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Coach"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#defeated_by -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#defeated_by">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Teams"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Teams"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#has_home_venue -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#has_home_venue">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Teams"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Venues"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#participates_in -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#participates_in">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Teams"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Competitions"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#takes_place_at -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#takes_place_at">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Competitions"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Venues"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Address -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Address">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Venues"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Athlete_Age -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Athlete_Age">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Athletes"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Athlete_Age"/>
+                <owl:someValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">15</xsd:minExclusive>
+                            </rdf:Description>
+                            <rdf:Description>
+                                <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">100</xsd:maxInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Athlete_Name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Athlete_Name">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Athletes"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Athlete_Nationality -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Athlete_Nationality">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Athletes"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Athlete_Salary -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Athlete_Salary">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Athletes"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Athlete_Salary"/>
+                <owl:someValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">10000.0</xsd:minExclusive>
+                            </rdf:Description>
+                            <rdf:Description>
+                                <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">5.0E8</xsd:maxInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Budget -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Budget">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Teams"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Budget"/>
+                <owl:someValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1000000.0</xsd:minExclusive>
+                            </rdf:Description>
+                            <rdf:Description>
+                                <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">2.0E9</xsd:maxInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Capacity -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Capacity">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Venues"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Capacity"/>
+                <owl:someValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5000</xsd:minExclusive>
+                            </rdf:Description>
+                            <rdf:Description>
+                                <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">150000</xsd:maxInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Coach_Age -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Coach_Age">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Coach"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Coach_Age"/>
+                <owl:someValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">15</xsd:minExclusive>
+                            </rdf:Description>
+                            <rdf:Description>
+                                <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">100</xsd:maxInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Coach_Name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Coach_Name">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Coach"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Coach_Nationality -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Coach_Nationality">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Coach"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Coach_Salary -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Coach_Salary">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Coach"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Coach_Salary"/>
+                <owl:someValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">10000.0</xsd:minExclusive>
+                            </rdf:Description>
+                            <rdf:Description>
+                                <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">5.0E8</xsd:maxInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Competition_Name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Competition_Name">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Competitions"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Governing_body -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Governing_body">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Competitions"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Governing_body"/>
+                        <owl:hasValue>AFC</owl:hasValue>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Governing_body"/>
+                        <owl:hasValue>CAF</owl:hasValue>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Governing_body"/>
+                        <owl:hasValue>CONMEBOL</owl:hasValue>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Governing_body"/>
+                        <owl:hasValue>LIBERTADORES</owl:hasValue>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Governing_body"/>
+                        <owl:hasValue>UEFA</owl:hasValue>
+                    </owl:Restriction>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Height -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Height">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Athletes"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Number_of_participants -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Number_of_participants">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Competitions"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Number_of_participants"/>
+                <owl:someValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</xsd:minInclusive>
+                            </rdf:Description>
+                            <rdf:Description>
+                                <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">256</xsd:maxInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Number_of_players -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Number_of_players">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Teams"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Number_of_players"/>
+                <owl:someValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</xsd:minInclusive>
+                            </rdf:Description>
+                            <rdf:Description>
+                                <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">100</xsd:maxInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Prize_money -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Prize_money">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Competitions"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Prize_money"/>
+                <owl:someValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">100000.0</xsd:minExclusive>
+                            </rdf:Description>
+                            <rdf:Description>
+                                <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.0E9</xsd:maxInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Team_Name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Team_Name">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Teams"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Venue_Name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Venue_Name">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Venues"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Athletes -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Athletes">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#belongs_to"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Teams"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Sports"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Coach -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Coach">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Sports"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Competitions -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Competitions">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#takes_place_at"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Venues"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Sports"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Sports -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Sports"/>
+    
+
+
+    <!-- http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Teams -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Teams">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#participates_in"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Competitions"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#coached_by"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Coach"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#has_home_venue"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Venues"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#defeated_by"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">20</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Teams"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#participates_in"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">7</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Competitions"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Sports"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Venues -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Venues">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Sports"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Anfield -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Anfield">
+        <rdf:type rdf:resource="http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Venues"/>
+        <untitled-ontology-46:Address>Liverpool</untitled-ontology-46:Address>
+        <untitled-ontology-46:Capacity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">50000</untitled-ontology-46:Capacity>
+        <untitled-ontology-46:Venue_Name>Anfield</untitled-ontology-46:Venue_Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Arsenal -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Arsenal">
+        <rdf:type rdf:resource="http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Teams"/>
+        <untitled-ontology-46:coached_by rdf:resource="http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#CoachArteta"/>
+        <untitled-ontology-46:defeated_by rdf:resource="http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#ManCity"/>
+        <untitled-ontology-46:has_home_venue rdf:resource="http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Emirates"/>
+        <untitled-ontology-46:participates_in rdf:resource="http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#ChampionsLeague"/>
+        <untitled-ontology-46:participates_in rdf:resource="http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#PremierLeague"/>
+        <untitled-ontology-46:Budget rdf:datatype="http://www.w3.org/2001/XMLSchema#float">3.0E8</untitled-ontology-46:Budget>
+        <untitled-ontology-46:Number_of_players rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">36</untitled-ontology-46:Number_of_players>
+        <untitled-ontology-46:Team_Name>Arsenal</untitled-ontology-46:Team_Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Azpilicueta -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Azpilicueta">
+        <rdf:type rdf:resource="http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Athletes"/>
+        <untitled-ontology-46:belongs_to rdf:resource="http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Chelsea"/>
+        <untitled-ontology-46:Athlete_Age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">32</untitled-ontology-46:Athlete_Age>
+        <untitled-ontology-46:Athlete_Name>Azpilicueta</untitled-ontology-46:Athlete_Name>
+        <untitled-ontology-46:Athlete_Nationality>Spanish</untitled-ontology-46:Athlete_Nationality>
+        <untitled-ontology-46:Athlete_Salary rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.2E7</untitled-ontology-46:Athlete_Salary>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#ChampionsLeague -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#ChampionsLeague">
+        <rdf:type rdf:resource="http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Competitions"/>
+        <untitled-ontology-46:takes_place_at rdf:resource="http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Anfield"/>
+        <untitled-ontology-46:Competition_Name>ChampionsLeague</untitled-ontology-46:Competition_Name>
+        <untitled-ontology-46:Governing_body>UEFA</untitled-ontology-46:Governing_body>
+        <untitled-ontology-46:Number_of_participants rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">32</untitled-ontology-46:Number_of_participants>
+        <untitled-ontology-46:Prize_money rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.0E9</untitled-ontology-46:Prize_money>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Chelsea -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Chelsea">
+        <rdf:type rdf:resource="http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Teams"/>
+        <untitled-ontology-46:coached_by rdf:resource="http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#CoachTuchel"/>
+        <untitled-ontology-46:defeated_by rdf:resource="http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Arsenal"/>
+        <untitled-ontology-46:defeated_by rdf:resource="http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Liverpool"/>
+        <untitled-ontology-46:defeated_by rdf:resource="http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#ManCity"/>
+        <untitled-ontology-46:has_home_venue rdf:resource="http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#StamfordBridge"/>
+        <untitled-ontology-46:participates_in rdf:resource="http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#ChampionsLeague"/>
+        <untitled-ontology-46:participates_in rdf:resource="http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#PremierLeague"/>
+        <untitled-ontology-46:Budget rdf:datatype="http://www.w3.org/2001/XMLSchema#float">6.0E8</untitled-ontology-46:Budget>
+        <untitled-ontology-46:Number_of_players rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">55</untitled-ontology-46:Number_of_players>
+        <untitled-ontology-46:Team_Name>Chelsea</untitled-ontology-46:Team_Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#CoachArteta -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#CoachArteta">
+        <rdf:type rdf:resource="http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Coach"/>
+        <untitled-ontology-46:Coach_Age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">45</untitled-ontology-46:Coach_Age>
+        <untitled-ontology-46:Coach_Name>CoachArteta</untitled-ontology-46:Coach_Name>
+        <untitled-ontology-46:Coach_Nationality>Spanish</untitled-ontology-46:Coach_Nationality>
+        <untitled-ontology-46:Coach_Salary rdf:datatype="http://www.w3.org/2001/XMLSchema#float">6000000.0</untitled-ontology-46:Coach_Salary>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#CoachGuardiola -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#CoachGuardiola">
+        <rdf:type rdf:resource="http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Coach"/>
+        <untitled-ontology-46:Coach_Age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">55</untitled-ontology-46:Coach_Age>
+        <untitled-ontology-46:Coach_Name>CoachGuardiola</untitled-ontology-46:Coach_Name>
+        <untitled-ontology-46:Coach_Nationality>Spanish</untitled-ontology-46:Coach_Nationality>
+        <untitled-ontology-46:Coach_Salary rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.5E7</untitled-ontology-46:Coach_Salary>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#CoachKlopp -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#CoachKlopp">
+        <rdf:type rdf:resource="http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Coach"/>
+        <untitled-ontology-46:Coach_Age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">53</untitled-ontology-46:Coach_Age>
+        <untitled-ontology-46:Coach_Name>CoachKlopp</untitled-ontology-46:Coach_Name>
+        <untitled-ontology-46:Coach_Nationality>German</untitled-ontology-46:Coach_Nationality>
+        <untitled-ontology-46:Coach_Salary rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.0E7</untitled-ontology-46:Coach_Salary>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#CoachMourinho -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#CoachMourinho">
+        <rdf:type rdf:resource="http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Coach"/>
+        <untitled-ontology-46:Coach_Age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">60</untitled-ontology-46:Coach_Age>
+        <untitled-ontology-46:Coach_Name>CoachMourinho</untitled-ontology-46:Coach_Name>
+        <untitled-ontology-46:Coach_Nationality>Portuguese</untitled-ontology-46:Coach_Nationality>
+        <untitled-ontology-46:Coach_Salary rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.8E7</untitled-ontology-46:Coach_Salary>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#CoachTuchel -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#CoachTuchel">
+        <rdf:type rdf:resource="http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Coach"/>
+        <untitled-ontology-46:Coach_Age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">42</untitled-ontology-46:Coach_Age>
+        <untitled-ontology-46:Coach_Name>CoachTuchel</untitled-ontology-46:Coach_Name>
+        <untitled-ontology-46:Coach_Nationality>German</untitled-ontology-46:Coach_Nationality>
+        <untitled-ontology-46:Coach_Salary rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.6E7</untitled-ontology-46:Coach_Salary>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#DeBruyne -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#DeBruyne">
+        <rdf:type rdf:resource="http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Athletes"/>
+        <untitled-ontology-46:belongs_to rdf:resource="http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#ManCity"/>
+        <untitled-ontology-46:Athlete_Age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">31</untitled-ontology-46:Athlete_Age>
+        <untitled-ontology-46:Athlete_Name>DeBruyne</untitled-ontology-46:Athlete_Name>
+        <untitled-ontology-46:Athlete_Nationality>Belgian</untitled-ontology-46:Athlete_Nationality>
+        <untitled-ontology-46:Athlete_Salary rdf:datatype="http://www.w3.org/2001/XMLSchema#float">3.0E7</untitled-ontology-46:Athlete_Salary>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Emirates -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Emirates">
+        <rdf:type rdf:resource="http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Venues"/>
+        <untitled-ontology-46:Address>London</untitled-ontology-46:Address>
+        <untitled-ontology-46:Capacity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">60000</untitled-ontology-46:Capacity>
+        <untitled-ontology-46:Venue_Name>Emirates</untitled-ontology-46:Venue_Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Etihad -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Etihad">
+        <rdf:type rdf:resource="http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Venues"/>
+        <untitled-ontology-46:Address>Manchester</untitled-ontology-46:Address>
+        <untitled-ontology-46:Capacity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">55000</untitled-ontology-46:Capacity>
+        <untitled-ontology-46:Venue_Name>Etihad</untitled-ontology-46:Venue_Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Firmino -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Firmino">
+        <rdf:type rdf:resource="http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Athletes"/>
+        <untitled-ontology-46:belongs_to rdf:resource="http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Liverpool"/>
+        <untitled-ontology-46:Athlete_Age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">33</untitled-ontology-46:Athlete_Age>
+        <untitled-ontology-46:Athlete_Name>Firmino</untitled-ontology-46:Athlete_Name>
+        <untitled-ontology-46:Athlete_Nationality>Brazilian</untitled-ontology-46:Athlete_Nationality>
+        <untitled-ontology-46:Athlete_Salary rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.5E7</untitled-ontology-46:Athlete_Salary>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Haaland -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Haaland">
+        <rdf:type rdf:resource="http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Athletes"/>
+        <untitled-ontology-46:belongs_to rdf:resource="http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#ManCity"/>
+        <untitled-ontology-46:Athlete_Age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">21</untitled-ontology-46:Athlete_Age>
+        <untitled-ontology-46:Athlete_Name>Haaland</untitled-ontology-46:Athlete_Name>
+        <untitled-ontology-46:Athlete_Nationality>Norwegian</untitled-ontology-46:Athlete_Nationality>
+        <untitled-ontology-46:Athlete_Salary rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.0E7</untitled-ontology-46:Athlete_Salary>
+        <untitled-ontology-46:Height rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.94</untitled-ontology-46:Height>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Kante -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Kante">
+        <rdf:type rdf:resource="http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Athletes"/>
+        <untitled-ontology-46:belongs_to rdf:resource="http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Chelsea"/>
+        <untitled-ontology-46:Athlete_Age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">32</untitled-ontology-46:Athlete_Age>
+        <untitled-ontology-46:Athlete_Name>Kante</untitled-ontology-46:Athlete_Name>
+        <untitled-ontology-46:Athlete_Nationality>French</untitled-ontology-46:Athlete_Nationality>
+        <untitled-ontology-46:Athlete_Salary rdf:datatype="http://www.w3.org/2001/XMLSchema#float">2.5E7</untitled-ontology-46:Athlete_Salary>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Liverpool -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Liverpool">
+        <rdf:type rdf:resource="http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Teams"/>
+        <untitled-ontology-46:coached_by rdf:resource="http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#CoachKlopp"/>
+        <untitled-ontology-46:defeated_by rdf:resource="http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Arsenal"/>
+        <untitled-ontology-46:defeated_by rdf:resource="http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#ManUtd"/>
+        <untitled-ontology-46:has_home_venue rdf:resource="http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Anfield"/>
+        <untitled-ontology-46:participates_in rdf:resource="http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#ChampionsLeague"/>
+        <untitled-ontology-46:participates_in rdf:resource="http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#PremierLeague"/>
+        <untitled-ontology-46:Budget rdf:datatype="http://www.w3.org/2001/XMLSchema#float">2.5E8</untitled-ontology-46:Budget>
+        <untitled-ontology-46:Number_of_players rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">30</untitled-ontology-46:Number_of_players>
+        <untitled-ontology-46:Team_Name>Liverpool</untitled-ontology-46:Team_Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#ManCity -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#ManCity">
+        <rdf:type rdf:resource="http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Teams"/>
+        <untitled-ontology-46:coached_by rdf:resource="http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#CoachGuardiola"/>
+        <untitled-ontology-46:defeated_by rdf:resource="http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Liverpool"/>
+        <untitled-ontology-46:has_home_venue rdf:resource="http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Etihad"/>
+        <untitled-ontology-46:participates_in rdf:resource="http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#ChampionsLeague"/>
+        <untitled-ontology-46:participates_in rdf:resource="http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#PremierLeague"/>
+        <untitled-ontology-46:Budget rdf:datatype="http://www.w3.org/2001/XMLSchema#float">7.0E8</untitled-ontology-46:Budget>
+        <untitled-ontology-46:Number_of_players rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">40</untitled-ontology-46:Number_of_players>
+        <untitled-ontology-46:Team_Name>ManCity</untitled-ontology-46:Team_Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#ManUtd -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#ManUtd">
+        <rdf:type rdf:resource="http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Teams"/>
+        <untitled-ontology-46:coached_by rdf:resource="http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#CoachMourinho"/>
+        <untitled-ontology-46:defeated_by rdf:resource="http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Arsenal"/>
+        <untitled-ontology-46:defeated_by rdf:resource="http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Liverpool"/>
+        <untitled-ontology-46:defeated_by rdf:resource="http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#ManCity"/>
+        <untitled-ontology-46:has_home_venue rdf:resource="http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#OldTrafford"/>
+        <untitled-ontology-46:participates_in rdf:resource="http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#PremierLeague"/>
+        <untitled-ontology-46:Budget rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.6E8</untitled-ontology-46:Budget>
+        <untitled-ontology-46:Number_of_players rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">46</untitled-ontology-46:Number_of_players>
+        <untitled-ontology-46:Team_Name>ManUtd</untitled-ontology-46:Team_Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Odegaard -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Odegaard">
+        <rdf:type rdf:resource="http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Athletes"/>
+        <untitled-ontology-46:belongs_to rdf:resource="http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Arsenal"/>
+        <untitled-ontology-46:Athlete_Age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">23</untitled-ontology-46:Athlete_Age>
+        <untitled-ontology-46:Athlete_Name>Odegaard</untitled-ontology-46:Athlete_Name>
+        <untitled-ontology-46:Athlete_Nationality>Norwegian</untitled-ontology-46:Athlete_Nationality>
+        <untitled-ontology-46:Athlete_Salary rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.3E7</untitled-ontology-46:Athlete_Salary>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#OldTrafford -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#OldTrafford">
+        <rdf:type rdf:resource="http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Venues"/>
+        <untitled-ontology-46:Address>Manchester</untitled-ontology-46:Address>
+        <untitled-ontology-46:Capacity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">65000</untitled-ontology-46:Capacity>
+        <untitled-ontology-46:Venue_Name>OldTrafford</untitled-ontology-46:Venue_Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#PremierLeague -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#PremierLeague">
+        <rdf:type rdf:resource="http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Competitions"/>
+        <untitled-ontology-46:takes_place_at rdf:resource="http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Anfield"/>
+        <untitled-ontology-46:takes_place_at rdf:resource="http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Emirates"/>
+        <untitled-ontology-46:takes_place_at rdf:resource="http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Etihad"/>
+        <untitled-ontology-46:takes_place_at rdf:resource="http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#OldTrafford"/>
+        <untitled-ontology-46:takes_place_at rdf:resource="http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#StamfordBridge"/>
+        <untitled-ontology-46:Competition_Name>PremierLeague</untitled-ontology-46:Competition_Name>
+        <untitled-ontology-46:Governing_body>UEFA</untitled-ontology-46:Governing_body>
+        <untitled-ontology-46:Number_of_participants rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20</untitled-ontology-46:Number_of_participants>
+        <untitled-ontology-46:Prize_money rdf:datatype="http://www.w3.org/2001/XMLSchema#float">9.0E8</untitled-ontology-46:Prize_money>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Ramsdale -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Ramsdale">
+        <rdf:type rdf:resource="http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Athletes"/>
+        <untitled-ontology-46:belongs_to rdf:resource="http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Arsenal"/>
+        <untitled-ontology-46:Athlete_Age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">24</untitled-ontology-46:Athlete_Age>
+        <untitled-ontology-46:Athlete_Name>Ramsdale</untitled-ontology-46:Athlete_Name>
+        <untitled-ontology-46:Athlete_Nationality>British</untitled-ontology-46:Athlete_Nationality>
+        <untitled-ontology-46:Athlete_Salary rdf:datatype="http://www.w3.org/2001/XMLSchema#float">5000000.0</untitled-ontology-46:Athlete_Salary>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Ronaldo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Ronaldo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Athletes"/>
+        <untitled-ontology-46:belongs_to rdf:resource="http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#ManUtd"/>
+        <untitled-ontology-46:Athlete_Age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">38</untitled-ontology-46:Athlete_Age>
+        <untitled-ontology-46:Athlete_Name>Ronaldo</untitled-ontology-46:Athlete_Name>
+        <untitled-ontology-46:Athlete_Nationality>Portuguese</untitled-ontology-46:Athlete_Nationality>
+        <untitled-ontology-46:Athlete_Salary rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.0E8</untitled-ontology-46:Athlete_Salary>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Rooney -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Rooney">
+        <rdf:type rdf:resource="http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Athletes"/>
+        <untitled-ontology-46:belongs_to rdf:resource="http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#ManUtd"/>
+        <untitled-ontology-46:Athlete_Age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">40</untitled-ontology-46:Athlete_Age>
+        <untitled-ontology-46:Athlete_Name>Rooney</untitled-ontology-46:Athlete_Name>
+        <untitled-ontology-46:Athlete_Nationality>British</untitled-ontology-46:Athlete_Nationality>
+        <untitled-ontology-46:Athlete_Salary rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.7E7</untitled-ontology-46:Athlete_Salary>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Salah -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Salah">
+        <rdf:type rdf:resource="http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Athletes"/>
+        <untitled-ontology-46:belongs_to rdf:resource="http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Liverpool"/>
+        <untitled-ontology-46:Athlete_Age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">31</untitled-ontology-46:Athlete_Age>
+        <untitled-ontology-46:Athlete_Name>Salah</untitled-ontology-46:Athlete_Name>
+        <untitled-ontology-46:Athlete_Nationality>Egyptian</untitled-ontology-46:Athlete_Nationality>
+        <untitled-ontology-46:Athlete_Salary rdf:datatype="http://www.w3.org/2001/XMLSchema#float">3.1E7</untitled-ontology-46:Athlete_Salary>
+        <untitled-ontology-46:Height rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.75</untitled-ontology-46:Height>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#StamfordBridge -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#StamfordBridge">
+        <rdf:type rdf:resource="http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#Venues"/>
+        <untitled-ontology-46:Address>London</untitled-ontology-46:Address>
+        <untitled-ontology-46:Capacity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">45000</untitled-ontology-46:Capacity>
+        <untitled-ontology-46:Venue_Name>StamfordBridge</untitled-ontology-46:Venue_Name>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi -->
+
