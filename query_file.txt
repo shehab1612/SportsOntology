@@ -1,0 +1,118 @@
+Query 1:
+
+PREFIX uri:<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#>
+SELECT  (str(?x) as ?label0) (str(?y) as ?label1) (str(?z) as ?label2)
+where { 
+?athlete a uri:Athletes. 
+?team a uri:Teams. 
+?coach a uri:Coach. 
+?athlete uri:belongs_to ?team. 
+?athlete uri:Athlete_Name ?x. 
+?athlete uri:Athlete_Age ?z. 
+?team uri:coached_by ?coach. 
+?coach uri:Coach_Name ?y.
+}
+Order BY ?z
+
+Query 2:
+PREFIX uri:<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#>
+SELECT (str(?x) as ?label0)
+where 
+{ ?athlete a uri:Athletes.
+  ?team a uri:Teams.
+  ?competition a uri:Competitions.
+  ?competition uri:Competition_Name "ChampionsLeague".
+  ?athlete uri:belongs_to ?team.
+  ?team uri:participates_in ?competition.
+  ?athlete uri:Athlete_Name ?x.
+  FILTER REGEX(?x,"^R","i").
+}
+Order BY ?x
+
+Query 3:
+PREFIX uri:<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#>
+SELECT  (str(?x) as ?label0) (str(?y) as ?label1) (str(?z) as ?label2)
+where { 
+?athlete a uri:Athletes. 
+?team a uri:Teams.
+?athlete uri:belongs_to ?team.
+{?team uri:Team_Name "Arsenal".}
+UNION
+{?team uri:Team_Name "Liverpool".}
+UNION
+{?team uri:Team_Name "ManCity".}
+?athlete uri:Athlete_Name ?x.
+?team uri:Team_Name ?y.
+OPTIONAL {?athlete uri:Height ?z.}
+}
+Order BY ?x
+
+Query 4:
+PREFIX uri:<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#>
+SELECT  (str(?x) as ?label0) (str(?y) as ?label1) (str(?z) as ?label2)
+where {
+?athlete a uri:Athletes. 
+?team a uri:Teams.
+?coach a uri:Coach.
+?competition a uri:Competitions.
+OPTIONAL {?team uri:participates_in ?competition.
+?competition_name uri:Competition_Name "ChampionsLeague".}
+FILTER (!BOUND(?competition_name))
+?athlete uri:belongs_to ?team.
+?team uri:coached_by ?coach. 
+?team uri:Team_Name ?x.
+?athlete uri:Athlete_Name ?y.
+?coach uri:Coach_Name ?z.
+}
+Order BY ?x
+
+Query 5:
+PREFIX uri:<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#>
+SELECT  (COUNT (?venue) as ?label0)
+where {
+?venue a uri:Venues. 
+?venue uri:Capacity ?capacity.
+FILTER (?capacity >=55000)
+}
+
+Query 6:
+PREFIX uri:<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#>
+SELECT ?label0 (AVG(?athlete_salary) as ?label1)
+where {
+?athlete a uri:Athletes. 
+?athlete uri:Athlete_Salary ?athlete_salary.
+?athlete uri:Athlete_Nationality ?label0.
+}
+GROUP BY ?label0
+ORDER BY ?label1
+
+Query 7:
+PREFIX uri:<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#>
+SELECT (MAX(?capacity) as ?label0) (MAX(?budget) as ?label1)
+where {
+?venue a uri:Venues. 
+?team a uri:Teams.
+?venue uri:Address ?address.
+FILTER (?address = "London" || ?address = "Liverpool")
+?venue uri:Capacity ?capacity.
+?team uri:has_home_venue ?venue.
+?team uri:Budget ?budget.
+}
+
+
+Query 8:
+PREFIX uri:<http://www.semanticweb.org/salma/ontologies/2023/4/untitled-ontology-46#>
+SELECT  (str(?team_name) as ?label0)
+where {
+?team a uri:Teams.
+?competition a uri:Competitions.
+?competition uri:Competition_Name "ChampionsLeague".
+?team uri:participates_in ?competition.
+MINUS{?team uri:defeated_by ?winner_team.
+?winner_team uri:Team_Name "Liverpool".}
+MINUS{?team uri:Team_Name "Liverpool".}
+?team uri:Team_Name ?team_name.
+}
+Order BY ?team_name
+
+
